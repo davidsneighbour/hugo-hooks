@@ -1,0 +1,11 @@
+[module.hugoVersion]
+extended = false
+min = "0.82.0"
+
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
+
+[params.dnb.blocks.config]
+hooklink = "https://hugonewsletter.com/"
+verbosity = 5

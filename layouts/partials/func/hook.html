@@ -1,0 +1,40 @@
+{{- /* Check if this is a simple use or extended use hook */ -}}
+{{- $context := dict -}}
+{{- if reflect.IsMap . -}}
+  {{- $context = merge $context . }}
+{{- else -}}
+  {{- $context = merge $context (dict "hook" . "context" dict) -}}
+{{- end -}}
+
+{{- /* create hook paths */ -}}
+{{- $partialHook := printf "partials/hooks/%s.html" $context.hook -}}
+{{- $partialHookCached :=
+      printf
+        "partials/hooks/%s-cached.html"
+        $context.hook
+-}}
+{{- $loaded := false -}}
+
+{{- /* execute partial hook if it exists */ -}}
+{{- if templates.Exists $partialHook -}}
+  {{- partial $partialHook $context -}}
+  {{- $loaded = true -}}
+{{- end -}}
+
+{{- /* execute partial hook cached if it exists */ -}}
+{{- if templates.Exists $partialHookCached -}}
+  {{- partialCached $partialHookCached $context $context.hook -}}
+  {{- $loaded = true -}}
+{{- end -}}
+
+{{- /* send out a note if the hook is not run */ -}}
+{{- if eq $loaded false -}}
+  {{- $verbosity := printf "%d" site.Params.dnb.hooks.debug.verbosity | default 5 -}}
+  {{- if lt $verbosity 4 -}}
+    {{- warnf
+          "Unused hook available for %s (see %s)"
+          $context.hook
+          site.Params.dnb.blocks.config.hooklink
+    -}}
+  {{- end -}}
+{{- end -}}
