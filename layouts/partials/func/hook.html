@@ -33,8 +33,8 @@
   {{- if lt $verbosity 4 -}}
     {{- warnf
           "Unused hook available for %s (see %s)"
-          $context.hook
-          site.Params.dnb.blocks.config.hooklink
+          (printf "%s" $context.hook)
+          site.Params.dnb.hooks.config.hooklink
     -}}
   {{- end -}}
 {{- end -}}
