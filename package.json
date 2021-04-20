@@ -11,12 +11,13 @@
     "@dnb-hugo/standard-version-config": "2.0.2",
     "@dnb-hugo/textlint-config": "2.0.2"
   },
-  "homepage": "https://github.com/dnb-hugo/hooks/tree/master/bootstrap",
+  "homepage": "https://github.com/dnb-hugo/hooks",
   "license": "MIT",
   "private": true,
   "scripts": {
     "release": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
     "release-major": "standard-version --release-as major -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
-    "release-next": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh"
+    "release-next": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
+    "remark": "remark ."
   }
 }
