@@ -1,5 +1,5 @@
 [module.hugoVersion]
-extended = false
+extended = true
 min = "0.82.0"
 
 [[module.mounts]]
