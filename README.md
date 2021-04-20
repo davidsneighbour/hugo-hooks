@@ -9,6 +9,24 @@ sections, a banner at the top of the page or some arbitrary Javascript code.
 This layout introduces hooks. A simple way a theme developer can add these
 "layout locations" to hook additional features in.
 
+### Hook use
+
+Hooks are saved to the `layouts/partials/hooks` directory. There are no errors 
+if a hook is not found. If a hook has an added `-cached` to it's name then it will
+be cached and on multiple calls re-used. 
+
+For example:
+
+```gotemplate
+{{ partial "func/hook" "head-start" }}
+```
+
+will load `layouts/partials/hooks/head-start.html` and `layouts/partials/hooks/head-start-cached.html`.
+
+You can force caching by loading the hook via `partialCached` instead.
+
+Hooks do not return any values, they execute layouts. 
+
 ### Simple Use
 
 Add the hook name as parameter to simple calls. The context inside of the hook
