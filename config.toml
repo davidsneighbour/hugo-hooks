@@ -6,6 +6,9 @@ min = "0.82.0"
 source = "layouts"
 target = "layouts"
 
-[params.dnb.blocks.config]
-hooklink = "https://hugonewsletter.com/"
+[params]
+[params.dnb]
+[params.dnb.hooks]
+[params.dnb.hooks.config]
+hooklink = "https://github.com/dnb-hugo/hooks/"
 verbosity = 5
