@@ -29,12 +29,10 @@
 
 {{- /* send out a note if the hook is not run */ -}}
 {{- if eq $loaded false -}}
-  {{- $verbosity := printf "%d" site.Params.dnb.hooks.debug.verbosity | default 5 -}}
-  {{- if lt $verbosity 4 -}}
-    {{- warnf
-          "Unused hook available for %s (see %s)"
-          (printf "%s" $context.hook)
-          site.Params.dnb.hooks.config.hooklink
-    -}}
-  {{- end -}}
+  {{- partial "func/debug" (dict
+      "message" (printf "Unused hook available for %s (see %s)" (printf "%s" $context.hook) site.Params.dnb.hooks.config.hooklink)
+      "context" .
+      "severity" "info"
+      "level" 7
+  ) -}}
 {{- end -}}
