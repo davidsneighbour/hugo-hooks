@@ -6,9 +6,15 @@ min = "0.82.0"
 source = "layouts"
 target = "layouts"
 
+[[module.imports]]
+path = "github.com/dnb-hugo/components/functions"
+disable = false
+ignoreConfig = false
+ignoreImports = false
+
 [params]
 [params.dnb]
 [params.dnb.hooks]
 [params.dnb.hooks.config]
-hooklink = "https://github.com/dnb-hugo/hooks/"
+hooklink = "https://q.dnb9.xyz/hooks"
 verbosity = 5
