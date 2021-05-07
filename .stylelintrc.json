@@ -1,4 +1,0 @@
-{
-  "extends": "@dnb-hugo/stylelint-config",
-  "plugin/no-unsupported-browser-features": false
-}
