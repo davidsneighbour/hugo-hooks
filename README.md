@@ -74,14 +74,13 @@ The next time you run hugo it will download the latest version of the module.
 
 ### Update
 
-To update this module:
-
-```shell
+```shell script
+# to update this module:
 hugo mod get -u github.com/dnb-hugo/hooks
-```
 
-To update all modules:
-
-```shell
+# to update all modules:
 hugo mod get -u
+
+# to update all modules recursively:
+hugo mod get -u ./...
 ```

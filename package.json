@@ -7,9 +7,7 @@
     "url": "https://github.com/dnb-hugo/hooks/issues"
   },
   "devDependencies": {
-    "@dnb-hugo/remark-config": "2.0.6",
-    "@dnb-hugo/standard-version-config": "2.0.5",
-    "@dnb-hugo/textlint-config": "2.0.5"
+    "@dnb-hugo/standard-version-config": "3.0.1"
   },
   "homepage": "https://github.com/dnb-hugo/hooks",
   "license": "MIT",
