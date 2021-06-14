@@ -32,7 +32,7 @@ Hooks do not return any values, they execute layouts.
 Add the hook name as parameter to simple calls. The context inside of the hook
 layout will have a hook parameter with that name.
 
-```
+```gotemplate
 {{- partial "func/hook" "hookname" -}}
 {{- partialCached "func/hook" "hookname" -}}
 ```
@@ -43,7 +43,7 @@ If you want to submit more information than just the hookname (like the context)
 then add a `dict` as parameter. The `hook` item is required, everything else
 will be passed through to the hook layout.
 
-```
+```gotemplate
 {{- partial "func/hook" ( dict "hook" "hookname" "context" . ) -}}
 {{- partialCached "func/hook" ( dict "hook" "hookname" "context" . ) -}}
 ```
