@@ -1,3 +1,5 @@
+[![GitHub issues](https://img.shields.io/github/issues-raw/dnb-hugo/hooks?logo=github&style=for-the-badge)](https://github.com/dnb-hugo/hooks/issues) ![LasCHanges](https://img.shields.io/github/last-commit/dnb-hugo/hooks?color=%23ff7700&logo=github&style=for-the-badge) [![Codacy Badge](https://img.shields.io/codacy/grade/1aa52a19ae5b42efa80f04157a29ae8d?logo=codacy&style=for-the-badge)](https://www.codacy.com/gh/dnb-hugo/hooks/dashboard) ![License](https://img.shields.io/github/license/dnb-hugo/hooks?logo=github&style=for-the-badge) ![Follow us on Twitter](https://img.shields.io/twitter/follow/hugonewsletter?color=%231DA1F2&logo=twitter&style=for-the-badge) [![Gitter Chatroom](https://img.shields.io/gitter/room/dnb-hugo/community?color=%23ed1965&logo=gitter&style=for-the-badge)](https://gitter.im/dnb-hugo/community)
+
 ## DNB-Hugo Hooks
 
 This is a template hooks system for Hugo.
