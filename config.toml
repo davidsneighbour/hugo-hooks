@@ -6,15 +6,12 @@ min = "0.82.0"
 source = "layouts"
 target = "layouts"
 
+[[module.mounts]]
+source = "data/dnb/hooks/"
+target = "data/dnb/hooks/"
+
 [[module.imports]]
 path = "github.com/dnb-hugo/components/functions"
 disable = false
 ignoreConfig = false
 ignoreImports = false
-
-[params]
-[params.dnb]
-[params.dnb.hooks]
-[params.dnb.hooks.config]
-hooklink = "https://q.dnb9.xyz/hooks"
-verbosity = 5
