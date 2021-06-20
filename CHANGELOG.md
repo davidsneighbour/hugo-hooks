@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.7](https://github.com/dnb-hugo/hooks/compare/v1.0.6...v1.0.7) (2021-06-20)
+
+
+### Bug Fixes
+
+* hooklink config confusion ([4470e8e](https://github.com/dnb-hugo/hooks/commit/4470e8e7907fc4e079192a6347af737e463c0d9a))
+
+
+### Documentation
+
+* more badges ([41b75a6](https://github.com/dnb-hugo/hooks/commit/41b75a6d138b6aac14f0bc7fd5cb6b82bae49973))
+
 ### [1.0.6](https://github.com/dnb-hugo/hooks/compare/v1.0.5...v1.0.6) (2021-06-20)
 
 
