@@ -30,7 +30,7 @@
 {{- /* send out a note if the hook is not run */ -}}
 {{- if eq $loaded false -}}
   {{- partial "func/debug" (dict
-      "message" (printf "Unused hook available for `%s` (see %s)" (printf "%s" $context.hook) site.Data.Dnb.Hooks.Config.hooklink)
+      "message" (printf "Unused hook available for `%s` (see %s)" (printf "%s" $context.hook) site.Data.dnb.hooks.config.hooklink)
       "context" .
       "severity" "info"
       "level" 8
