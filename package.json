@@ -1,7 +1,7 @@
 {
   "name": "@dnb-hugo/hooks",
   "description": "A template hooks system for Hugo",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
   "bugs": {
     "url": "https://github.com/dnb-hugo/hooks/issues"
