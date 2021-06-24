@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.9](https://github.com/dnb-hugo/hooks/compare/v1.0.8...v1.0.9) (2021-06-24)
+
+
+### Bug Fixes
+
+* remove version max restriction ([8090bed](https://github.com/dnb-hugo/hooks/commit/8090bed303e97a4c68d70ab8fa10998880ca0829))
+
 ### [1.0.8](https://github.com/dnb-hugo/hooks/compare/v1.0.7...v1.0.8) (2021-06-22)
 
 
