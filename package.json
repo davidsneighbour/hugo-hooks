@@ -1,17 +1,17 @@
 {
-  "name": "@dnb-hugo/hooks",
+  "name": "@dnb-org/hooks",
   "description": "A template hooks system for Hugo",
   "version": "1.0.10",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
   "bugs": {
-    "url": "https://github.com/dnb-hugo/hooks/issues"
+    "url": "https://github.com/dnb-org/hooks/issues"
   },
   "devDependencies": {
-    "@dnb-hugo/standard-version-config": "3.0.1",
-    "@dnb-hugo/remark-config": "3.0.1",
-    "@dnb-hugo/textlint-config": "3.0.1"
+    "@dnb-org/standard-version-config": "3.0.1",
+    "@dnb-org/remark-config": "3.0.1",
+    "@dnb-org/textlint-config": "3.0.1"
   },
-  "homepage": "https://github.com/dnb-hugo/hooks",
+  "homepage": "https://github.com/dnb-org/hooks",
   "license": "MIT",
   "private": true,
   "scripts": {
