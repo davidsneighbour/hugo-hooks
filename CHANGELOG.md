@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.11](https://github.com/dnb-hugo/hooks/compare/v1.0.10...v1.0.11) (2021-07-15)
+
+
+### Chore
+
+* move from dnb-hugo to dnb-org ([5f6a5c9](https://github.com/dnb-hugo/hooks/commit/5f6a5c956d4f4cf7c0a0ba3e16c99f6743e5bc10))
+
 ### [1.0.9](https://github.com/dnb-org/hooks/compare/v1.0.8...v1.0.9) (2021-06-24)
 
 
