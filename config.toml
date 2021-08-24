@@ -9,10 +9,6 @@ source = "layouts"
 target = "layouts"
 
 [[module.mounts]]
-source = "data"
-target = "data"
-
-[[module.mounts]]
 source = "data/dnb/hooks"
 target = "data/dnb/hooks"
 
