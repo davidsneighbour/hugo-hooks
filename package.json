@@ -7,9 +7,9 @@
     "url": "https://github.com/dnb-org/hooks/issues"
   },
   "devDependencies": {
-    "@dnb-org/standard-version-config": "3.1.0",
-    "@dnb-org/remark-config": "3.1.0",
-    "@dnb-org/textlint-config": "3.1.0"
+    "@dnb-org/standard-version-config": "3.2.8",
+    "@dnb-org/remark-config": "3.2.18",
+    "@dnb-org/textlint-config": "3.2.8"
   },
   "homepage": "https://github.com/dnb-org/hooks",
   "license": "MIT",
