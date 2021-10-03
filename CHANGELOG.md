@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.12](https://github.com/dnb-hugo/hooks/compare/v1.0.11...v1.0.12) (2021-10-03)
+
+
+### Chore
+
+* **deps:** update dependencies ([6adfd78](https://github.com/dnb-hugo/hooks/commit/6adfd78608392b40af0dc85112fc72b7503a11c5))
+* **deps:** update GoHugo modules ([0443d05](https://github.com/dnb-hugo/hooks/commit/0443d050358ce31444230a61f682dfe626e8cf61))
+* remove .idea directory ([fc8d98e](https://github.com/dnb-hugo/hooks/commit/fc8d98ec97a96a9cb99836d5fc1269dffc67a6f4))
+* update configuration ([cb304c8](https://github.com/dnb-hugo/hooks/commit/cb304c88b8deab5c221862a431216131348fdac0))
+
 ### [1.0.11](https://github.com/dnb-hugo/hooks/compare/v1.0.10...v1.0.11) (2021-07-15)
 
 
