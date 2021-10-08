@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.14](https://github.com/dnb-hugo/hooks/compare/v1.0.13...v1.0.14) (2021-10-08)
+
+
+### Chore
+
+* add clean routines to package.json ([fc6ec45](https://github.com/dnb-hugo/hooks/commit/fc6ec45e1eb4ab5794958d055c1e9662ca02dbe5))
+
+
+### Documentation
+
+* update README.md ([b1b1ca2](https://github.com/dnb-hugo/hooks/commit/b1b1ca2591ff80c7e47ac8c66d2acd55deccfa6b))
+
 ### [1.0.13](https://github.com/dnb-hugo/hooks/compare/v1.0.12...v1.0.13) (2021-10-08)
 
 
