@@ -18,7 +18,7 @@ For example:
 {{ partial "func/hook" "head-start" }}
 ```
 
-will load `layouts/partials/hooks/head-start.html` and `layouts/partials/hooks/head-start-cached.html`.
+will load `layouts/partials/hooks/head-start.html` and `layouts/partials/hooks/head-start-cached.html`. The non-cached variant will be loaded before the cached one.
 
 You can force caching by loading the hook via `partialCached` instead.
 

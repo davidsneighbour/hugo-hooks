@@ -1,33 +1,43 @@
-{{- /* Check if this is a simple use or extended use hook */ -}}
+{{- /* create context from extended or simple hook */ -}}
 {{- $context := dict -}}
 {{- if reflect.IsMap . -}}
+  {{- /* extended use case */ -}}
   {{- $context = merge $context . }}
 {{- else -}}
+  {{- /* simple use case */ -}}
   {{- $context = merge $context (dict "hook" . "context" dict) -}}
 {{- end -}}
 
-{{- /* create hook paths */ -}}
+{{- /* create hook paths and variables */ -}}
 {{- $partialHook := printf "partials/hooks/%s.html" $context.hook -}}
-{{- $partialHookCached :=
-      printf
-        "partials/hooks/%s-cached.html"
-        $context.hook
--}}
+{{- $partialHookCached := printf "partials/hooks/%s-cached.html" $context.hook -}}
 {{- $loaded := false -}}
 
-{{- /* execute partial hook if it exists */ -}}
+{{- /* execute hook if it exists */ -}}
 {{- if templates.Exists $partialHook -}}
+  {{- partial "debug.html" (dict
+    "message" (printf "Running hook `%s` (see %s)" (printf "%s" $context.hook) site.Params.dnb.hooks.hooklink)
+    "context" .
+    "severity" "info"
+    "level" 9
+  ) -}}
   {{- partial $partialHook $context -}}
   {{- $loaded = true -}}
 {{- end -}}
 
-{{- /* execute partial hook cached if it exists */ -}}
+{{- /* execute cached hook if it exists */ -}}
 {{- if templates.Exists $partialHookCached -}}
+  {{- partial "debug.html" (dict
+    "message" (printf "Running cached hook `%s` (see %s)" (printf "%s" $context.hook) site.Params.dnb.hooks.hooklink)
+    "context" .
+    "severity" "info"
+    "level" 9
+  ) -}}
   {{- partialCached $partialHookCached $context $context.hook -}}
   {{- $loaded = true -}}
 {{- end -}}
 
-{{- /* send out a note if the hook is not run */ -}}
+{{- /* send out a note if the hook is not used */ -}}
 {{- if eq $loaded false -}}
   {{- partial "debug.html" (dict
       "message" (printf "Unused hook available for `%s` (see %s)" (printf "%s" $context.hook) site.Params.dnb.hooks.hooklink)
