@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.13](https://github.com/dnb-hugo/hooks/compare/v1.0.12...v1.0.13) (2021-10-08)
+
+
+### Chore
+
+* **config:** move config into configuration directory ([8bee828](https://github.com/dnb-hugo/hooks/commit/8bee8283b797606ab088be029bf940006de1b686))
+* fix package.json ([e990b6b](https://github.com/dnb-hugo/hooks/commit/e990b6bbdec2f262557b10b8f1cef86341db7425))
+
 ### [1.0.12](https://github.com/dnb-hugo/hooks/compare/v1.0.11...v1.0.12) (2021-10-03)
 
 
