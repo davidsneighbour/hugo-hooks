@@ -9,9 +9,11 @@
     "url": "https://github.com/dnb-org/hooks/issues"
   },
   "devDependencies": {
-    "@dnb-org/all": "^3.3.2"
+    "@dnb-org/all": "3.3.2"
   },
   "scripts": {
+    "clean": "run-p clean:*",
+    "clean:hugo": "rimraf node_modules resources package-lock.json public",
     "release": "npm run release:patch",
     "release:major": "standard-version --release-as major -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
     "release:minor": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
