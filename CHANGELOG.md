@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.20](https://github.com/dnb-hugo/hooks/compare/v1.0.19...v1.0.20) (2021-11-05)
+
+
+### Documentation
+
+* **fix:** markdown errors ([37e169a](https://github.com/dnb-hugo/hooks/commit/37e169a05735334ee78df3fc9f81b9ddb4565a3b))
+
 ### [1.0.19](https://github.com/dnb-hugo/hooks/compare/v1.0.18...v1.0.19) (2021-11-05)
 
 ### [1.0.18](https://github.com/dnb-hugo/hooks/compare/v1.0.17...v1.0.18) (2021-11-05)
