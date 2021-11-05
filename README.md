@@ -48,7 +48,24 @@ If you want to submit more information than just the hookname (like the context)
 
 ## Some more configuration
 
-The hook will add a warning (more like a notification, but Hugo does not have anything like that yet) if a hook exists that is not used. You can disable this by setting `Params.dnb.hooks.debug` to any value lower than 4.
+If you are using @dnb-org/debug you can silence all log messages about "running hook x" vy setting a debug level lower than 9. You can silence all log messages about unused hooks by settings a debug level lower than 8.
+
+You can also configure the module by setting the following options in the `params` section of your configuration:
+
+```toml
+[dnb.hooks]
+disable_messages = [
+  "unused_hooks",
+  "running_hooks",
+  "running_cached_hooks",
+  "running_uncached_hooks",
+]
+```
+
+- `unused_hooks` - silences "unused hooks" messages
+- `running_hooks` - silences ALL "running hook x" messages
+- `running_cached_hooks` - silences all "running cached hook x" messages
+- `running_uncached_hooks` - silences all "running uncached hook x" messages
 
 ## Best Practice
 
@@ -56,16 +73,25 @@ To be very portable between themes the following hooks should be used at the app
 
 | Hookname | Location |
 | --- | --- |
-| **head-start** | |
-| **head-pre-css** | |
-| **head-post-css** | |
-| **head-end** | |
+| **setup** | Runs before anything is put out. Use this hook to set up and configure your scripts. |
+| **head-init** | Runs right after the `<head>` tag. Layouts using this hook should not print anything out so that the three initial head-tags are printed first. Use `head-start` for things you want in the beginning of the page head. |
+| **head-start** | Runs after the three initial head-tags. |
+| **head-pre-css** | Runs inside the head before the stylesheets are added. |
+| **head-post-css** | Runs inside the head after the stylesheets are added. |
+| **head-end** | Runs at the end of the head, before the `</head>` tag. |
+
 | **body-start** | |
+
+| **container-start** | |
 | **content-start** | |
 | **content-end** | |
-| **footer-star** | |
+| **container-end** | |
+
+| **footer-start** | |
 | **footer-end** | |
+
 | **body-end** | |
+| **teardown** | Runs after everything is printed to output. Use this hook to cleanup for your scripts. |
 
 ## Installation
 

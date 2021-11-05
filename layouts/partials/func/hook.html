@@ -15,7 +15,11 @@
 
 {{- /* execute hook if it exists */ -}}
 {{- if templates.Exists $partialHook -}}
-  {{ if not ( or (in site.Params.dnb.hooks.disable_messages "running_hooks") (in site.Params.dnb.hooks.disable_messages "running_uncached_hooks") ) }}
+  {{ if not (
+          or
+            (in site.Params.dnb.hooks.disable_messages "running_hooks")
+            (in site.Params.dnb.hooks.disable_messages "running_uncached_hooks")
+  ) }}
     {{- partial "debug.html" (dict
       "message" (printf "Running hook `%s` (see %s)" (printf "%s" $context.hook) site.Params.dnb.hooks.hooklink)
       "context" .
@@ -29,7 +33,11 @@
 
 {{- /* execute cached hook if it exists */ -}}
 {{- if templates.Exists $partialHookCached -}}
-  {{ if not ( or (in site.Params.dnb.hooks.disable_messages "running_hooks") (in site.Params.dnb.hooks.disable_messages "running_cached_hooks") ) }}
+  {{ if not (
+          or
+            (in site.Params.dnb.hooks.disable_messages "running_hooks")
+            (in site.Params.dnb.hooks.disable_messages "running_cached_hooks")
+  ) }}
     {{- partial "debug.html" (dict
       "message" (printf "Running cached hook `%s` (see %s)" (printf "%s" $context.hook) site.Params.dnb.hooks.hooklink)
       "context" .
@@ -43,7 +51,9 @@
 
 {{- /* send out a note if the hook is not used */ -}}
 {{- if eq $loaded false -}}
-  {{ if not (in site.Params.dnb.hooks.disable_messages "unused_hooks") }}
+  {{ if not
+          (in site.Params.dnb.hooks.disable_messages "unused_hooks")
+  }}
     {{- partial "debug.html" (dict
         "message" (printf "Unused hook available for `%s` (see %s)" (printf "%s" $context.hook) site.Params.dnb.hooks.hooklink)
         "context" .
