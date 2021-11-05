@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.17](https://github.com/dnb-hugo/hooks/compare/v1.0.16...v1.0.17) (2021-11-05)
+
+
+### Features
+
+* **layouts:** adding silence configuration ([f934f63](https://github.com/dnb-hugo/hooks/commit/f934f635ef2e77d1532cea0fb4d0a6525322ec3a)), closes [#4](https://github.com/dnb-hugo/hooks/issues/4)
+
+
+### Documentation
+
+* update documentation of configuration parameters ([e6bdac7](https://github.com/dnb-hugo/hooks/commit/e6bdac7f976726a1f02c63df70992c5a28d10422))
+
 ### [1.0.16](https://github.com/dnb-hugo/hooks/compare/v1.0.15...v1.0.16) (2021-10-11)
 
 
