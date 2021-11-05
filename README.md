@@ -62,10 +62,10 @@ disable_messages = [
 ]
 ```
 
-- `unused_hooks` - silences "unused hooks" messages
-- `running_hooks` - silences ALL "running hook x" messages
-- `running_cached_hooks` - silences all "running cached hook x" messages
-- `running_uncached_hooks` - silences all "running uncached hook x" messages
+-   `unused_hooks` - silences "unused hooks" messages
+-   `running_hooks` - silences ALL "running hook x" messages
+-   `running_cached_hooks` - silences all "running cached hook x" messages
+-   `running_uncached_hooks` - silences all "running uncached hook x" messages
 
 ## Best Practice
 
