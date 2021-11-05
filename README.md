@@ -79,17 +79,13 @@ To be very portable between themes the following hooks should be used at the app
 | **head-pre-css** | Runs inside the head before the stylesheets are added. |
 | **head-post-css** | Runs inside the head after the stylesheets are added. |
 | **head-end** | Runs at the end of the head, before the `</head>` tag. |
-
 | **body-start** | |
-
 | **container-start** | |
 | **content-start** | |
 | **content-end** | |
 | **container-end** | |
-
 | **footer-start** | |
 | **footer-end** | |
-
 | **body-end** | |
 | **teardown** | Runs after everything is printed to output. Use this hook to cleanup for your scripts. |
 
