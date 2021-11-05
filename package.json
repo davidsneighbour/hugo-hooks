@@ -1,6 +1,6 @@
 {
   "name": "@dnb-org/hooks",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "license": "MIT",
   "description": "A template hooks system for Hugo",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
