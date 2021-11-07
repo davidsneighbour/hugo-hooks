@@ -71,23 +71,28 @@ disable_messages = [
 
 To be very portable between themes the following hooks should be used at the appropriate locations. All DNB Org GoHugo themes will do so. 
 
-| Hookname | Location |
-| --- | --- |
-| **setup** | Runs before anything is put out. Use this hook to set up and configure your scripts. |
-| **head-init** | Runs right after the `<head>` tag. Layouts using this hook should not print anything out so that the three initial head-tags are printed first. Use `head-start` for things you want in the beginning of the page head. |
-| **head-start** | Runs after the three initial head-tags. |
-| **head-pre-css** | Runs inside the head before the stylesheets are added. |
-| **head-post-css** | Runs inside the head after the stylesheets are added. |
-| **head-end** | Runs at the end of the head, before the `</head>` tag. |
-| **body-start** | |
-| **container-start** | |
-| **content-start** | |
-| **content-end** | |
-| **container-end** | |
-| **footer-start** | |
-| **footer-end** | |
-| **body-end** | |
-| **teardown** | Runs after everything is printed to output. Use this hook to cleanup for your scripts. |
+| :Hookname | Runs | Location |
+| --- | --- | --- |
+| **setup** | 1 | Runs before anything is put out. Use this hook to set up and configure your scripts. |
+| **head-init** | 1 | Runs right after the `<head>` tag. Layouts using this hook should not print anything out so that the three initial head-tags are printed first. Use `head-start` for things you want in the beginning of the page head. |
+| **head-start** | 1 | Runs after the three initial head-tags. |
+| **head-pre-css** | 1 | Runs inside the head before the stylesheets are added. |
+| **head-post-css** | 1 | Runs inside the head after the stylesheets are added. |
+| **head-end** | 1 | Runs at the end of the head, before the `</head>` tag. |
+| **body-start** | 1 | |
+| **container-start** | 1 | |
+| **content-start** | 1 | |
+| **content-end** | 1 | |
+| **container-end** | 1 | |
+| **footer-start** | 1 | |
+| **footer-inside-start** | 1+ | |
+| **footer-widget-start** | 1+ | |
+| **footer-widget-end** | 1+ | |
+| **footer-inside-end** | 1+ | |
+| **footer-end** | 1 | |
+| **body-end-pre-script** | 1 | Runs at the end of the body BEFORE the theme javascripts are added. |
+| **body-end** | 1 | Runs at the end of the body AFTER the theme javascripts are added. |
+| **teardown** | 1 | Runs after everything is printed to output. Use this hook to cleanup for your scripts. |
 
 ## Installation
 
