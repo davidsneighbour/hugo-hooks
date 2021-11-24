@@ -9,7 +9,7 @@
     "url": "https://github.com/dnb-org/hooks/issues"
   },
   "devDependencies": {
-    "@dnb-org/all": "3.3.3"
+    "@dnb-org/all": "3.3.12"
   },
   "scripts": {
     "clean": "run-p clean:*",
