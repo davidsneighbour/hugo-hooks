@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.21](https://github.com/dnb-hugo/hooks/compare/v1.0.20...v1.0.21) (2021-12-09)
+
+
+### Documentation
+
+* add hooks and how often they run ([dd59667](https://github.com/dnb-hugo/hooks/commit/dd596671868f5848f30438ea678b91a292a403c7))
+
+
+### Chore
+
+* **config:** add vscode configuration ([60107d4](https://github.com/dnb-hugo/hooks/commit/60107d4ed7c39702a48da3c6206710e321bb8fbb))
+* **deps:** update dependencies ([eceaf8a](https://github.com/dnb-hugo/hooks/commit/eceaf8ae0ed1af310d1fc4a5ea4b05bd2d7c00b4))
+* **deps:** update dependencies and add lock file ([2906325](https://github.com/dnb-hugo/hooks/commit/2906325675227615c07034105f0fd9f5b52c5542))
+* update module dependencies ([1b3ea38](https://github.com/dnb-hugo/hooks/commit/1b3ea38e587ca907fa024ed0c4474197317a7eda))
+
 ### [1.0.20](https://github.com/dnb-hugo/hooks/compare/v1.0.19...v1.0.20) (2021-11-05)
 
 

@@ -1,4 +1,4 @@
-github.com/dnb-org/components/functions v1.4.8 h1:4njnLI5hy4ECzksn3CGnWHI0ppk+SDQlrcSPXx90dcs=
-github.com/dnb-org/components/functions v1.4.8/go.mod h1:+GMAcQaK260wZ6ioNPbQY/ruWdBxFxj9PPw7o5p7eu0=
-github.com/dnb-org/debug v1.4.1 h1:jWSRBI1sBkbU7aS8uSc9GHyz0dnRAvrbBs5NgLCGFlI=
-github.com/dnb-org/debug v1.4.1/go.mod h1:0z/MDK1qgyqHmMM8mSrexsoPSTpJgIsNu3r6nw5zHAU=
+github.com/dnb-org/dnb-hugo-debug v1.4.3 h1:LbSxXq624VWkFEtoMJBaLuH7cXvZIXRYzzP6xiS4o2o=
+github.com/dnb-org/dnb-hugo-debug v1.4.3/go.mod h1:NWi/VpUDXC2GU5TLM7UEjL7HPT2WmgHgoURHTCVzTho=
+github.com/dnb-org/dnb-hugo-functions v0.0.2 h1:X5lGN+Ext2K2E/h0lPEGqlYEKPMv9kTKE55H2SYx4Iw=
+github.com/dnb-org/dnb-hugo-functions v0.0.2/go.mod h1:rU9Qd0s50UyD3QAHrTqegeHU2nlrSJJUy0VxV7ePwcU=
