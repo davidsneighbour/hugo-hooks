@@ -1,4 +1,4 @@
-module github.com/dnb-org/hooks
+module github.com/dnb-org/dnb-hugo-hooks
 
 go 1.16
 
