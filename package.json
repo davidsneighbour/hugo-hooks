@@ -1,6 +1,6 @@
 {
   "name": "@dnb-org/dnb-hugo-hooks",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "license": "MIT",
   "description": "A template hooks system for Hugo",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
@@ -35,7 +35,7 @@
   },
   "private": true,
   "dependencies": {
-    "mem": "^1.1.0",
-    "trim": "^0.0.1"
+    "mem": ">=4.0.0",
+    "trim": "^0.0.3"
   }
 }
