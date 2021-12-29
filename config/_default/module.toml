@@ -6,6 +6,10 @@ min = "0.56.0"
 source = "layouts"
 target = "layouts"
 
+[[mounts]]
+source = "data"
+target = "data"
+
 [[imports]]
 path = "github.com/dnb-org/dnb-hugo-functions"
 disable = false
