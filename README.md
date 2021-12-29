@@ -5,8 +5,6 @@
 
 <!--- CARD END --->
 
-[![GitHub issues](https://img.shields.io/github/issues-raw/dnb-org/hooks?logo=github&style=for-the-badge)](https://github.com/dnb-org/hooks/issues) ![LasCHanges](https://img.shields.io/github/last-commit/dnb-org/hooks?color=%23ff7700&logo=github&style=for-the-badge) [![Codacy Badge](https://img.shields.io/codacy/grade/1aa52a19ae5b42efa80f04157a29ae8d?logo=codacy&style=for-the-badge)](https://www.codacy.com/gh/dnb-org/hooks/dashboard) ![License](https://img.shields.io/github/license/dnb-org/hooks?logo=github&style=for-the-badge) ![Follow us on Twitter](https://img.shields.io/twitter/follow/hugonewsletter?color=%231DA1F2&logo=twitter&style=for-the-badge) [![Gitter Chatroom](https://img.shields.io/gitter/room/dnb-org/community?color=%23ed1965&logo=gitter&style=for-the-badge)](https://gitter.im/dnb-org/community) ![Latest Version](https://img.shields.io/github/v/tag/dnb-org/hooks?color=%23ed1965&label=Release&logo=hugo&logoColor=%23ffffff&sort=semver&style=for-the-badge) [![Hugo Version](https://img.shields.io/badge/Hugo-0.88.1-%23ed1965&?style=for-the-badge&logo=hugo&color=ed1965&?cacheSeconds=maxAge)](https://gohugo.io/)
-
 # DNB GoHugo Component / Hooks
 
 This is a hooks system for GoHugo templates.
