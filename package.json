@@ -33,5 +33,9 @@
     "release:minor": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
     "release:patch": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "mem": "^1.1.0",
+    "trim": "^0.0.1"
+  }
 }
