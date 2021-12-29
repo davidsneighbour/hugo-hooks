@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.24](https://github.com/dnb-org/dnb-org-hooks/compare/v1.0.23...v1.0.24) (2021-12-29)
+
+
+### Build System
+
+* add dependabot configuration ([6d6c532](https://github.com/dnb-org/dnb-org-hooks/commit/6d6c532df9c71ee72a0ee519abfc8fe1cb8eb4d8))
+* update release system ([3ca6f69](https://github.com/dnb-org/dnb-org-hooks/commit/3ca6f69d1c039ea0857a4c718de1aa44c144ecff))
+
+
+### Chore
+
+* **config:** update package files ([1c6fdf4](https://github.com/dnb-org/dnb-org-hooks/commit/1c6fdf47929f4b95f1ae90a7e2f5e57253d244af))
+* update repo files and documentation ([a4997d3](https://github.com/dnb-org/dnb-org-hooks/commit/a4997d3b5ce61059c502a6d53bd17565a927239f))
+
 ### [1.0.23](https://github.com/dnb-org/dnb-org-hooks/compare/v1.0.22...v1.0.23) (2021-12-10)
 
 
