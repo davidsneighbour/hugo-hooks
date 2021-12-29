@@ -1,15 +1,29 @@
 {
-  "name": "@dnb-org/hooks",
+  "name": "@dnb-org/dnb-hugo-hooks",
   "version": "1.0.23",
   "license": "MIT",
   "description": "A template hooks system for Hugo",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
-  "homepage": "https://github.com/dnb-org/hooks",
+  "homepage": "https://github.com/dnb-org/dnb-hugo-hooks",
   "bugs": {
-    "url": "https://github.com/dnb-org/hooks/issues"
+    "url": "https://github.com/dnb-org/dnb-hugo-hooks/issues"
   },
   "devDependencies": {
-    "@dnb-org/all": "3.4.20"
+    "@dnb-org/babel-config": "^3.4.7",
+    "@dnb-org/bootstrap-config": "^3.4.7",
+    "@dnb-org/browserslist-config": "^3.4.7",
+    "@dnb-org/commitlint-config": "^3.4.8",
+    "@dnb-org/cssnano-config": "^3.4.8",
+    "@dnb-org/cypress-config": "^3.4.9",
+    "@dnb-org/eslint-config": "^3.4.22",
+    "@dnb-org/postcss-config": "^3.4.8",
+    "@dnb-org/prettier-config": "^3.4.9",
+    "@dnb-org/remark-config": "^3.4.7",
+    "@dnb-org/standard-version-config": "^3.4.6",
+    "@dnb-org/stylelint-config": "^3.4.7",
+    "@dnb-org/textlint-config": "^3.4.8",
+    "@dnb-org/tools": "^3.4.8",
+    "@dnb-org/webpack-config": "^3.4.8"
   },
   "scripts": {
     "clean": "run-p clean:*",
