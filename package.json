@@ -36,6 +36,6 @@
   "private": true,
   "dependencies": {
     "mem": ">=4.0.0",
-    "trim": "^0.0.3"
+    "trim": "^1.0.1"
   }
 }
