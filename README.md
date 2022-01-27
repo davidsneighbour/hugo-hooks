@@ -9,9 +9,11 @@
 
 Hooks for GoHugo layouts. An easy way for theme developers to let users add to their themes.
 
-We often want to add locations in our templates that users can add something on their own. Be it some code for an analytics program, some space for ads or call to actions or additional footer sections, a banner at the top of the page or some arbitrary Javascript code.
+We often want to add locations and places in our templates and layouts where it's users can add something on their own. Be it some code for an analytics script,, that arbitrary ad or popup or just some space for call to actions or additional footer sections, a banner at the top of the page or some very specific Javascript code. `dnb-hugo-hooks` is what you need.
 
-This module adds these hooks to your theme and provides a simple way any theme developer can add these "layout locations" to "hook" additional features in.
+This module adds these hooks to your theme and provides a simple way **any theme developer** can add these "layout locations" to "hook" additional features in.
+
+**The end-user** can add simple layout files to "hook" into these locations and add whatever pizzazz their website needs.
 
 <!--- THINGSTOKNOW BEGIN --->
 
@@ -26,6 +28,7 @@ These are notes about conventions in this README.md. You might want to make your
 The following documentation will refer to all configuration parameters in TOML format and with the assumption of a configuration file for your project at `/config.toml`. There are various formats of configurations (TOML/YAML/JSON) and multiple locations your configuration can reside (config file or config directory). Note that in the case of a config directory the section headers of all samples need to have the respective section title removed. So `[params.dnb.something]` will become `[dnb.something]` if the configuration is done in the file `/config/$CONFIGNAME/params.toml`.
 
 </details>
+
 <!--- THINGSTOKNOW END --->
 
 <!--- INSTALLUPDATE BEGIN --->
