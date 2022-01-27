@@ -7,7 +7,7 @@
 
 # DNB GoHugo Component / Hooks
 
-This is a hooks system for GoHugo templates.
+Hooks for GoHugo layouts. An easy way for theme developers to let users add to their themes.
 
 We often want to add locations in our templates that users can add something on their own. Be it some code for an analytics program, some space for ads or call to actions or additional footer sections, a banner at the top of the page or some arbitrary Javascript code.
 
