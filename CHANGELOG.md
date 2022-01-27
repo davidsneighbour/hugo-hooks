@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.26](https://github.com/dnb-org/dnb-hugo-hooks/compare/v1.0.23...v1.0.26) (2022-01-27)
+
+
+### Chore
+
+* **ci:** reset dependabot to weekly checks ([163a361](https://github.com/dnb-org/dnb-hugo-hooks/commit/163a361f153cfe03f262901e12539474ba8670d2))
+* **config:** add data mount ([2196cc8](https://github.com/dnb-org/dnb-hugo-hooks/commit/2196cc8690dbac2ad0b75dcdf879434e7c116606))
+* **config:** move build file to proper location ([0af9f16](https://github.com/dnb-org/dnb-hugo-hooks/commit/0af9f16c8da84aee9b719c93fa225def6bb9efc1))
+* **config:** remove vscode configuration ([7ad13aa](https://github.com/dnb-org/dnb-hugo-hooks/commit/7ad13aa9d2c522e349a1ea58338b62a3c2f81768))
+* **config:** update gitignore ([9a93894](https://github.com/dnb-org/dnb-hugo-hooks/commit/9a9389441df0b5ed04d91857db56f705d63fec5e))
+* **config:** update header images ([70a5b82](https://github.com/dnb-org/dnb-hugo-hooks/commit/70a5b825bb2f911d6349de04f330da4a5297442a))
+* **config:** update package files ([1c6fdf4](https://github.com/dnb-org/dnb-hugo-hooks/commit/1c6fdf47929f4b95f1ae90a7e2f5e57253d244af))
+* **deps:** update dependencies ([17fbde7](https://github.com/dnb-org/dnb-hugo-hooks/commit/17fbde73a68b1ab99ab34279126cd3e27eec4b36))
+* **deps:** update dependencies for dependabot ([2e89003](https://github.com/dnb-org/dnb-hugo-hooks/commit/2e890033383ea15d291cca0a80d11f63853d2fba))
+* **deps:** update dependencies for dependabot ([e47b9cf](https://github.com/dnb-org/dnb-hugo-hooks/commit/e47b9cfd9e566180da64382aaa54c34fd774ae41))
+* **deps:** update Go dependencies ([2f7b28e](https://github.com/dnb-org/dnb-hugo-hooks/commit/2f7b28e9e71712fd14ef76fb09d5d2dfe3437ba1))
+* **release:** v1.0.24 ([9b3127c](https://github.com/dnb-org/dnb-hugo-hooks/commit/9b3127c854ef6863fc400ea1f05cff2443ff4d37))
+* set default level of hook run notices to 9 ([48d3913](https://github.com/dnb-org/dnb-hugo-hooks/commit/48d391303db8ba49b5faf88f6ad3cd5167a224fb))
+* update repo files and documentation ([a4997d3](https://github.com/dnb-org/dnb-hugo-hooks/commit/a4997d3b5ce61059c502a6d53bd17565a927239f))
+* update repository files ([c4d0ec6](https://github.com/dnb-org/dnb-hugo-hooks/commit/c4d0ec67516e6901ffb262c4e74853636de16caf))
+
+
+### Build System
+
+* add dependabot configuration ([6d6c532](https://github.com/dnb-org/dnb-hugo-hooks/commit/6d6c532df9c71ee72a0ee519abfc8fe1cb8eb4d8))
+* add documentation update script to build system ([442a13e](https://github.com/dnb-org/dnb-hugo-hooks/commit/442a13ea8c8583c3a1b4466514cf55b64ee2b7d1))
+* move build files around and add docs preparation script ([209bdb8](https://github.com/dnb-org/dnb-hugo-hooks/commit/209bdb859b6525b69c04b380be1265b2df109a40))
+* move build scripts around ([a59be47](https://github.com/dnb-org/dnb-hugo-hooks/commit/a59be4739c4ce81cb8056a28d6c73b941405135a))
+* update release system ([3ca6f69](https://github.com/dnb-org/dnb-hugo-hooks/commit/3ca6f69d1c039ea0857a4c718de1aa44c144ecff))
+
 ### [1.0.25](https://github.com/dnb-org/dnb-org-hooks/compare/v1.0.23...v1.0.25) (2021-12-29)
 
 
