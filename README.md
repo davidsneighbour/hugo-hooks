@@ -94,7 +94,7 @@ Add the hook name as parameter to simple calls. The context inside of the hook l
 
 ## Extended Use
 
-If you want to submit more information than just the hookname (like the context) then add a `dict` as parameter. The `hook` item is required, everything else will be passed through to the hook layout.
+If you want to submit more information than just the hookname then add a `dict`ionary as parameter. The `hook` item is required, everything else will be passed through as-is to the hook layout.
 
 ```golang
 {{- partial "func/hook" ( dict "hook" "hookname" "context" . ) -}}
@@ -103,7 +103,6 @@ If you want to submit more information than just the hookname (like the context)
 
 ## Some more configuration
 
-If you are using @dnb-org/debug you can silence all log messages about "running hook x" vy setting a debug level lower than 9. You can silence all log messages about unused hooks by settings a debug level lower than 8.
 
 You can also configure the module by setting the following options in the `params` section of your configuration:
 
