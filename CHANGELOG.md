@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.27](https://github.com/dnb-org/dnb-hugo-hooks/compare/v1.0.26...v1.0.27) (2022-01-27)
+
+
+### Build System
+
+* add README.md to release ([4d4e96c](https://github.com/dnb-org/dnb-hugo-hooks/commit/4d4e96c62e90833d1db5ba3d538f30f627d19454))
+
 ### [1.0.26](https://github.com/dnb-org/dnb-hugo-hooks/compare/v1.0.23...v1.0.26) (2022-01-27)
 
 
