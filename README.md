@@ -69,34 +69,34 @@ Theme users save hooks to the `layouts/partials/hooks` directory. There are no e
 
 For example:
 
-```gotemplate
+```golang
 {{ partial "func/hook" "head-start" }}
 ```
 
-will load `layouts/partials/hooks/head-start.html` and `layouts/partials/hooks/head-start-cached.html`. The non-cached variant will be loaded before the cached one.
+will load `layouts/partials/hooks/head-start.html` and `layouts/partials/hooks/head-start-cached.html`. The non-cached variant will be loaded **BEFORE** the cached one.
 
 You can force caching by loading the hook via `partialCached` instead.
 
-```gotemplate
+```golang
 {{ partialCached "func/hook" "head-start" "cachename"}}
 ```
 
-These hooks currently **do not return any values**, they execute the layouts. To read more about ideas to extend the hooks read [ISSUE2](https://github.com/dnb-org/hooks/issues/2).
+These hooks currently **do not return any values**, they execute the layouts. To read more about ideas to extend the hooks to return values read [#2 RFC: Hooks that return values](https://github.com/dnb-org/hooks/issues/2).
 
 ## Simple Use
 
 Add the hook name as parameter to simple calls. The context inside of the hook layout will have a hook parameter with that name.
 
-```gotemplate
+```golang
 {{- partial "func/hook" "hookname" -}}
-{{- partialCached "func/hook" "hookname" -}}
+{{- partialCached "func/hook" "hookname" $CACHENAME -}}
 ```
 
 ## Extended Use
 
 If you want to submit more information than just the hookname (like the context) then add a `dict` as parameter. The `hook` item is required, everything else will be passed through to the hook layout.
 
-```gotemplate
+```golang
 {{- partial "func/hook" ( dict "hook" "hookname" "context" . ) -}}
 {{- partialCached "func/hook" ( dict "hook" "hookname" "context" . ) -}}
 ```
