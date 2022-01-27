@@ -3,7 +3,7 @@ const localStandardVersion = {
   bumpFiles: [
     ...defaultStandardVersion.bumpFiles,
     {
-      filename: 'data/dnb/hooks/info.json',
+      filename: 'data/dnb/hooks/build.json',
       type: 'json',
     },
   ],
