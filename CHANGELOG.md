@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/dnb-org/dnb-hugo-hooks/compare/v1.0.27...v1.1.0) (2022-01-27)
+
+
+### Build System
+
+* **fix:** add proper data directory ([4b21855](https://github.com/dnb-org/dnb-hugo-hooks/commit/4b2185532ecac118bad341f5c5fed4ce549d8ca0))
+
+
+### Chore
+
+* **release:** v1.0.28 ([959c2f1](https://github.com/dnb-org/dnb-hugo-hooks/commit/959c2f198f2ae97a7ab81bab68e66eeb676b802a))
+
+
+### Documentation
+
+* update README.md ([54d4acc](https://github.com/dnb-org/dnb-hugo-hooks/commit/54d4accc385a9231af124f602a2df4c424dc13a0))
+* update README.md ([2b88908](https://github.com/dnb-org/dnb-hugo-hooks/commit/2b8890858026c7243eacad05e8535c21c1304a59))
+* update README.md ([013b3a9](https://github.com/dnb-org/dnb-hugo-hooks/commit/013b3a9e4b8fcd4dbe6e2a43a2e725666515cffb))
+
 ### [1.0.28](https://github.com/dnb-org/dnb-hugo-hooks/compare/v1.0.27...v1.0.28) (2022-01-27)
 
 
