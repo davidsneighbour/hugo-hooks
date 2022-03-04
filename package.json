@@ -8,7 +8,7 @@
   "bugs": "https://github.com/dnb-org/dnb-hugo-hooks/issues",
   "devDependencies": {
     "@dnb-org/cypress-config": "^3.5.6",
-    "@dnb-org/prettier-config": "^3.5.7",
+    "@dnb-org/prettier-config": "^3.5.8",
     "@dnb-org/standard-version-config": "^3.5.6",
     "@dnb-org/tools": "^3.5.6"
   },
