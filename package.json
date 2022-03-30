@@ -2,7 +2,7 @@
   "name": "@dnb-org/dnb-hugo-hooks",
   "version": "1.1.0",
   "license": "MIT",
-  "description": "A template hooks system for Hugo",
+  "description": "Hooks for GoHugo layouts. An easy way for theme developers to let users add to their themes.",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
   "homepage": "https://github.com/dnb-org/dnb-hugo-hooks",
   "bugs": "https://github.com/dnb-org/dnb-hugo-hooks/issues",
@@ -10,7 +10,7 @@
     "@dnb-org/cypress-config": "^3.5.9",
     "@dnb-org/prettier-config": "^3.5.10",
     "@dnb-org/standard-version-config": "^3.5.9",
-    "@dnb-org/tools": "^3.5.9"
+    "@dnb-org/tools": "^3.5.10"
   },
   "scripts": {
     "clean": "run-p clean:*",
@@ -20,10 +20,5 @@
     "release:minor": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease",
     "release:patch": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease"
   },
-  "private": true,
-  "dependencies": {
-    "mem": ">=9.0.2",
-    "trim": "^1.0.1",
-    "nanoid": ">=3.3.1"
-  }
+  "private": true
 }
