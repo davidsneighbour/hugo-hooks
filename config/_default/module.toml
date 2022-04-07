@@ -11,13 +11,13 @@ source = "data"
 target = "data"
 
 [[imports]]
-path = "github.com/dnb-org/dnb-hugo-functions"
+path = "github.com/davidsneighbour/hugo-functions"
 disable = false
 ignoreConfig = false
 ignoreImports = false
 
 [[imports]]
-path = "github.com/dnb-org/dnb-hugo-debug"
+path = "github.com/davidsneighbour/hugo-debug"
 disable = false
 ignoreConfig = false
 ignoreImports = false

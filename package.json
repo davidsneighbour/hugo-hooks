@@ -1,11 +1,11 @@
 {
-  "name": "@dnb-org/dnb-hugo-hooks",
+  "name": "@davidsneighbour/hugo-hooks",
   "version": "1.1.1",
   "license": "MIT",
   "description": "Hooks for GoHugo layouts. An easy way for theme developers to let users add to their themes.",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
-  "homepage": "https://github.com/dnb-org/dnb-hugo-hooks",
-  "bugs": "https://github.com/dnb-org/dnb-hugo-hooks/issues",
+  "homepage": "https://github.com/davidsneighbour/hugo-hooks",
+  "bugs": "https://github.com/davidsneighbour/hugo-hooks/issues",
   "devDependencies": {
     "@dnb-org/cypress-config": "^3.5.9",
     "@dnb-org/prettier-config": "^3.5.10",
