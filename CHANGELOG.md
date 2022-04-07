@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/dnb-org/dnb-hugo-hooks/compare/v1.0.27...v1.2.2) (2022-04-07)
+
+
+### Features
+
+* add version number in partial func/hooks/version.html ([c69ebd0](https://github.com/dnb-org/dnb-hugo-hooks/commit/c69ebd050b57d314d6345d5fb5e3429ce8eb968a))
+
+
+### Build System
+
+* **fix:** add proper data directory ([4b21855](https://github.com/dnb-org/dnb-hugo-hooks/commit/4b2185532ecac118bad341f5c5fed4ce549d8ca0))
+
+
+### Documentation
+
+* update README.md ([54d4acc](https://github.com/dnb-org/dnb-hugo-hooks/commit/54d4accc385a9231af124f602a2df4c424dc13a0))
+* update README.md ([2b88908](https://github.com/dnb-org/dnb-hugo-hooks/commit/2b8890858026c7243eacad05e8535c21c1304a59))
+* update README.md ([013b3a9](https://github.com/dnb-org/dnb-hugo-hooks/commit/013b3a9e4b8fcd4dbe6e2a43a2e725666515cffb))
+
+
+### Chore
+
+* **config:** update dependabot configuration to run monthly ([4656237](https://github.com/dnb-org/dnb-hugo-hooks/commit/46562374780a1083b4a58cf5f49fefb8d16b3cfe))
+* **deps:** update dependencies ([44f1665](https://github.com/dnb-org/dnb-hugo-hooks/commit/44f16651f475c0e9e0bbff34990045e9bc3ca352))
+* **deps:** update dependencies ([6f282b3](https://github.com/dnb-org/dnb-hugo-hooks/commit/6f282b39bb1c47526da2c80180880b3bca384db8))
+* **deps:** update dependencies ([59c2344](https://github.com/dnb-org/dnb-hugo-hooks/commit/59c2344bc2b46d68fcf6719354ec337bb0945c8a))
+* **deps:** update dependencies ([7ee6b78](https://github.com/dnb-org/dnb-hugo-hooks/commit/7ee6b7886ad09100ea18e2c5e7acb6d9d99c11d4))
+* **deps:** update go module dependencies ([30f60de](https://github.com/dnb-org/dnb-hugo-hooks/commit/30f60de579d4ecedfe86ea7ae576991d5261f348))
+* **deps:** update module dependencies ([ee812c5](https://github.com/dnb-org/dnb-hugo-hooks/commit/ee812c50cac632d01d150e387cb648feff85c38d))
+* **release:** v1.0.28 ([959c2f1](https://github.com/dnb-org/dnb-hugo-hooks/commit/959c2f198f2ae97a7ab81bab68e66eeb676b802a))
+* **release:** v1.1.0 ([1371b4a](https://github.com/dnb-org/dnb-hugo-hooks/commit/1371b4af30b8e20d3c930d1ca0a3a1d732408d3b))
+* **release:** v1.1.1 ([3982159](https://github.com/dnb-org/dnb-hugo-hooks/commit/3982159f78fe06512ee1fdebbad4d6909d0a3078))
+* **release:** v1.2.0 ([c1c90fb](https://github.com/dnb-org/dnb-hugo-hooks/commit/c1c90fbc1d88159d669752024391cff669591b13))
+* **release:** v1.2.1 ([c00f369](https://github.com/dnb-org/dnb-hugo-hooks/commit/c00f3698b99730ccc4d15ac6067a3778d601585e))
+* update go.mod ([24f9fa8](https://github.com/dnb-org/dnb-hugo-hooks/commit/24f9fa88e9672c1f2ad487f1b6ec252881d00e0a))
+* updates and repo-renames ([64ec8dc](https://github.com/dnb-org/dnb-hugo-hooks/commit/64ec8dcf38f6c96cbdd5613979e75786949b35ca))
+
 ### [1.2.1](https://github.com/dnb-org/dnb-hugo-hooks/compare/v1.0.27...v1.2.1) (2022-04-07)
 
 
