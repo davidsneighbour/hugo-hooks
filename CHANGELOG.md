@@ -19,7 +19,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Documentation
 
-* updated all references to the correct GH organization and repo ([#27](https://github.com/dnb-org/dnb-hugo-hooks/issues/27)) ([dca7f3b](https://github.com/dnb-org/dnb-hugo-hooks/commit/dca7f3b9a7125780eeaa7b0bfa867687e4862a68))
+* updated all references to the correct GH organization and repo ([#27](https://github.com/davidsneighbour/hugo-hooks/issues/27)) ([dca7f3b](https://github.com/davidsneighbour/hugo-hooks/commit/dca7f3b9a7125780eeaa7b0bfa867687e4862a68))
 
 ### [1.2.2](https://github.com/davidsneighbour/hugo-hooks/compare/v1.0.27...v1.2.2) (2022-04-07)
 

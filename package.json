@@ -7,10 +7,10 @@
   "homepage": "https://github.com/davidsneighbour/hugo-hooks",
   "bugs": "https://github.com/davidsneighbour/hugo-hooks/issues",
   "devDependencies": {
-    "@dnb-org/cypress-config": "^3.5.9",
-    "@dnb-org/prettier-config": "^3.5.10",
-    "@dnb-org/standard-version-config": "^3.5.9",
-    "@dnb-org/tools": "^3.5.10"
+    "@davidsneighbour/cypress-config": "^4.0.1",
+    "@davidsneighbour/prettier-config": "^4.0.1",
+    "@davidsneighbour/standard-version-config": "^4.0.1",
+    "@davidsneighbour/tools": "^4.0.1"
   },
   "scripts": {
     "clean": "run-p clean:*",
