@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/davidsneighbour/hugo-hooks/compare/v1.2.2...v1.3.2) (2022-04-14)
+
+
+### Documentation
+
+* updated all references to the correct GH organization and repo ([#27](https://github.com/davidsneighbour/hugo-hooks/issues/27)) ([dca7f3b](https://github.com/davidsneighbour/hugo-hooks/commit/dca7f3b9a7125780eeaa7b0bfa867687e4862a68))
+
+
+### Chore
+
+* **release:** v1.2.3 ([f9998b4](https://github.com/davidsneighbour/hugo-hooks/commit/f9998b4d5127e6423a66d3e3c588fa3eca9b7867))
+* **release:** v1.2.4 ([43dcec6](https://github.com/davidsneighbour/hugo-hooks/commit/43dcec6cb2dadd04ca6b695f9729bce252465be7))
+* **release:** v1.3.0 ([183be67](https://github.com/davidsneighbour/hugo-hooks/commit/183be67e7822fe91014c238b32b7728df7a383b4))
+* **release:** v1.3.1 ([565d5ee](https://github.com/davidsneighbour/hugo-hooks/commit/565d5ee49daed46b74103c7f99b0eeca5fb9fa5f))
+* update the release tool dependencies ([#28](https://github.com/davidsneighbour/hugo-hooks/issues/28)) ([9b06b23](https://github.com/davidsneighbour/hugo-hooks/commit/9b06b23e182ebc1cbf755786211e3e312b1e1b4d))
+
 ### [1.3.1](https://github.com/davidsneighbour/hugo-hooks/compare/v1.2.2...v1.3.1) (2022-04-14)
 
 
