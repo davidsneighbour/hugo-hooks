@@ -58,17 +58,19 @@
 {{- /* if no file based hooks ran then check for folder based hooks */ -}}
 {{- if eq $loaded false -}}
   {{- $partialHookFolder := printf "layouts/partials/hooks/%s/" $context.hook -}}
-  {{- partial "debug.html" (dict
-    "message" (printf "running folder hooks for `%s`" (printf "%s" $context.hook))
-    "context" .
-    "severity" "info"
-    "level" 9
-  ) -}}
-  {{- range os.ReadDir $partialHookFolder -}}   
-    {{- if not .IsDir }}
-      {{- $partialHook := printf "%s%s" $partialHookFolder .Name -}}
-      {{- partial $partialHook $context $context.hook -}}
-      {{- $loaded = true -}}
+  {{- if fileExists $partialHookFolder -}}
+    {{- partial "debug.html" (dict
+      "message" (printf "running folder hooks for `%s`" (printf "%s" $context.hook))
+      "context" .
+      "severity" "info"
+      "level" 9
+    ) -}}
+    {{- range os.ReadDir $partialHookFolder -}}   
+      {{- if not .IsDir }}
+        {{- $partialHook := printf "%s%s" $partialHookFolder .Name -}}
+        {{- partial $partialHook $context $context.hook -}}
+        {{- $loaded = true -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
