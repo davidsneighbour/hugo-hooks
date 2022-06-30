@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.5](https://github.com/davidsneighbour/hugo-hooks/compare/v1.3.3...v1.3.5) (2022-06-30)
+
+
+### Chore
+
+* **config:** add configuration for layout files ([46f5994](https://github.com/davidsneighbour/hugo-hooks/commit/46f599478a3ef638caccdb3d61c7435cac607f6a))
+* **config:** add configuration for layout files ([d69fa1a](https://github.com/davidsneighbour/hugo-hooks/commit/d69fa1a23b9cb2f6ee77c9c738541c37392d95a1))
+* **deps:** update dependencies ([fa2f587](https://github.com/davidsneighbour/hugo-hooks/commit/fa2f5874edc0535e9b61f3e8068aad0bbe1a1c75))
+* **deps:** update dependencies ([b84c092](https://github.com/davidsneighbour/hugo-hooks/commit/b84c092305e1a61e49c746d64db6e9a77c83f3c5))
+* **git:** merge branch 'feat/folder-hooks' ([174b30e](https://github.com/davidsneighbour/hugo-hooks/commit/174b30e5fe2ece0d281086590ef77fa3131fb875)), closes [#29](https://github.com/davidsneighbour/hugo-hooks/issues/29)
+* **release:** v1.3.4 ([18db8f1](https://github.com/davidsneighbour/hugo-hooks/commit/18db8f195011a016f28ae091027ba61f5d2ed107))
+
 ### [1.3.4](https://github.com/davidsneighbour/hugo-hooks/compare/v1.3.3...v1.3.4) (2022-06-30)
 
 
