@@ -7,13 +7,13 @@
 
 # DNB GoHugo Component / Hooks
 
-Hooks for GoHugo layouts. An easy way for theme developers to let users add to their themes.
+Hooks for GoHugo layouts. An easy way for theme developers to let users add partials and blocks at pre-defined safe places to their themes.
 
-We often want to add locations and places in our templates and layouts where it's users can add something on their own. Be it some code for an analytics script,, that arbitrary ad or popup or just some space for call to actions or additional footer sections, a banner at the top of the page or some very specific Javascript code. `hugo-hooks` is what you need.
+We often want to add locations and places in our templates and layouts where it's users can add something on their own. Be it some code for an analytics script, that arbitrary ad or popup or just some space for call to actions or additional footer sections, a banner at the top of the page or some very specific Javascript code, a separator after each fifth post, a button in each header.
 
-This module adds these hooks to your theme and provides a simple way **any theme developer** can add these "layout locations" to "hook" additional features in.
+You name it. `hugo-hooks` is what you need. This module adds these hooks to your theme and provides a simple way **any theme developer** can add these "layout locations" to "hook" additional features in.
 
-**The end-user** can add simple layout files to "hook" into these locations and add whatever pizzazz their website needs.
+**The end-user** can add simple layout files to "hook" into these locations and add whatever pizzazz, panache, flair or sparkle their website needs.
 
 <!--- THINGSTOKNOW BEGIN --->
 
@@ -46,7 +46,7 @@ Then add this module to your required modules in `config.toml`.
 [module]
 
 [[module.imports]]
-path = "github.com/davidsneighbour/github.com/davidsneighbour/hugo-hooks"
+path = "github.com/davidsneighbour/hugo-hooks"
 disable = false
 ignoreConfig = false
 ignoreImports = false
@@ -59,22 +59,24 @@ The next time you run `hugo` it will download the latest version of the module.
 
 ```bash
 # update this module
-hugo mod get -u github.com/davidsneighbour/github.com/davidsneighbour/hugo-hooks
+hugo mod get -u github.com/davidsneighbour/hugo-hooks
 # update to a specific version
-hugo mod get -u github.com/davidsneighbour/github.com/davidsneighbour/hugo-hooks@v1.0.0
+hugo mod get -u github.com/davidsneighbour/hugo-hooks@v1.0.0
 # update all modules recursively over the whole project
 hugo mod get -u ./...
 ```
 <!--- INSTALLUPDATE END --->
 
-## Hook use
+## Hook principle
 
-Theme users save hooks to the `layouts/partials/hooks` directory. There are no errors if a hook is not found. If a hook has an added `-cached` to it's name then it will be cached and on re-calls be re-used.
+Theme users save hooks to the `layouts/partials/hooks` directory. There are no errors if a hook is not found (some themes or modules might provide a feedback if their hook is unused and usage of them is required to get important features working).
+
+If a hook has an added `-cached` to it's name then it will be cached and on re-calls be re-used. Check the documentation of the module or theme that introduces the hook to see if it makes sense to cache that specific hook.
 
 For example:
 
 ```golang
-{{ partial "func/hook" "head-start" }}
+{{ partial "func/hook.html" "head-start" }}
 ```
 
 will load `layouts/partials/hooks/head-start.html` and `layouts/partials/hooks/head-start-cached.html`. The non-cached variant will be loaded **BEFORE** the cached one.
@@ -82,31 +84,32 @@ will load `layouts/partials/hooks/head-start.html` and `layouts/partials/hooks/h
 You can force caching by loading the hook via `partialCached` instead.
 
 ```golang
-{{ partialCached "func/hook" "head-start" "cachename"}}
+{{ partialCached "func/hook.html" "head-start" "cachename"}}
 ```
 
 These hooks currently **do not return any values**, they execute the layouts. To read more about ideas to extend the hooks to return values read [#2 RFC: Hooks that return values](https://github.com/davidsneighbour/hugo-hooks/issues/2).
 
-## Simple Use
+## Call hooks in layouts
+
+### Simple Calls
 
 Add the hook name as parameter to simple calls. The context inside of the hook layout will have a hook parameter with that name.
 
 ```golang
-{{- partial "func/hook" "hookname" -}}
-{{- partialCached "func/hook" "hookname" $CACHENAME -}}
+{{- partial "func/hook.html" "hookname" -}}
+{{- partialCached "func/hook.html" "hookname" $CACHENAME -}}
 ```
 
-## Extended Use
+### Extended Use (adding parameters to the call)
 
-If you want to submit more information than just the hookname then add a `dict`ionary as parameter. The `hook` item is required, everything else will be passed through as-is to the hook layout.
+If the hook supports adding parameters you can call it by adding a `dict` object to your call. The `hook` parameter is required, everything else will be passed through as-is to the hook layout. You should always add `"context" .` to add the local layout-context to your parameters. Can't go wrong with that :)
 
 ```golang
-{{- partial "func/hook" ( dict "hook" "hookname" "context" . ) -}}
-{{- partialCached "func/hook" ( dict "hook" "hookname" "context" . ) -}}
+{{- partial "func/hook.html" ( dict "hook" "hookname" "context" . ) -}}
+{{- partialCached "func/hook.html" ( dict "hook" "hookname" "context" . ) $CACHENAME -}}
 ```
 
 ## Some more configuration
-
 
 You can also configure the module by setting the following options in the `params` section of your configuration:
 
@@ -125,12 +128,14 @@ disable_messages = [
 -   `running_cached_hooks` - silences all "running cached hook x" messages
 -   `running_uncached_hooks` - silences all "running uncached hook x" messages
 
-## Best Practice
+## Best Practices
 
-To be very portable between themes the following hooks should be used at the appropriate locations. All DNB Org GoHugo themes will do so.
+### "Global" Reusable Hooks
 
-| :Hookname | Runs | Location |
-| --- | --- | --- |
+To be very portable between themes the following hooks should be used at the appropriate locations in implementing themes and modules. All of @davidsneighbours GoHugo themes and modules will do so and to support the overall portable format of the underlying idea of the hook system we hope others will too:
+
+| Hookname | Runs | Location |
+| :--- | :---: | :--- |
 | **setup** | 1 | Runs before anything is put out. Use this hook to set up and configure your scripts. |
 | **head-init** | 1 | Runs right after the `<head>` tag. Layouts using this hook should not print anything out so that the three initial head-tags are printed first. Use `head-start` for things you want in the beginning of the page head. |
 | **head-start** | 1 | Runs after the three initial head-tags. |
@@ -148,9 +153,19 @@ To be very portable between themes the following hooks should be used at the app
 | **footer-widget-end** | 1+ | |
 | **footer-inside-end** | 1+ | |
 | **footer-end** | 1 | |
-| **body-end-pre-script** | 1 | Runs at the end of the body BEFORE the theme javascripts are added. |
-| **body-end** | 1 | Runs at the end of the body AFTER the theme javascripts are added. |
+| **body-end-pre-script** | 1 | Runs at the end of the body BEFORE the deferred theme javascripts are added. |
+| **body-end** | 1 | Runs at the end of the body AFTER the deferred theme javascripts are added and right before the `</body>` tag. |
 | **teardown** | 1 | Runs after everything is printed to output. Use this hook to cleanup for your scripts. |
+
+### Namespaced Hooks
+
+For specific modules we advise to use a namespaced hook name (like `dnb-netlification-headers`) to avoid collisions with other modules and hooks. Please document your hooks and refer back to this README so users can dive into the details of the system if required.
+
+### Sample hook usage
+
+Have a look a the following projects to see usage of the hook system:
+
+- [Hooks in the theme of kollitsch.dev](https://github.com/davidsneighbour/kollitsch.dev/search?q=func%2Fhook)
 
 <!--- COMPONENTS BEGIN --->
 
