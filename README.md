@@ -13,7 +13,7 @@ We often want to add locations and places in our templates and layouts where it'
 
 You name it. `hugo-hooks` is what you need. This module adds these hooks to your theme and provides a simple way **any theme developer** can add these "layout locations" to "hook" additional features in.
 
-**The end-user** can add simple layout files to "hook" into these locations and add whatever pizzazz, panache, flair or sparkle their website needs.
+**You as the end-user** can add simple layout files to "hook" into these locations and add whatever pizzazz, panache, flair or sparkle your website needs.
 
 <!--- THINGSTOKNOW BEGIN --->
 
@@ -109,9 +109,9 @@ If the hook supports adding parameters you can call it by adding a `dict` object
 {{- partialCached "func/hook.html" ( dict "hook" "hookname" "context" . ) $CACHENAME -}}
 ```
 
-## Some more configuration
+## Configuration
 
-You can also configure the module by setting the following options in the `params` section of your configuration:
+You can configure the module by setting the following options in the `params` section of your configuration:
 
 ```toml
 [dnb.hooks]
@@ -123,10 +123,27 @@ disable_messages = [
 ]
 ```
 
+**disable_messages**:
+
 -   `unused_hooks` - silences "unused hooks" messages
 -   `running_hooks` - silences ALL "running hook x" messages
--   `running_cached_hooks` - silences all "running cached hook x" messages
--   `running_uncached_hooks` - silences all "running uncached hook x" messages
+-   `running_cached_hooks` - silences all "running cached hook x" messages (`false` if `running_hooks` is false)
+-   `running_uncached_hooks` - silences all "running uncached hook x" messages (`false` if `running_hooks` is false)
+
+The messages system also uses the methods implemented in `hugo-debug` to silence based on verbosity level.
+
+## Hooks for developers
+
+Implementing the hooks system in your theme or module is easy. There are several ways the system looks for hooks. The following main order is kept:
+
+- hooks in a folder (`layouts/partials/hooks/hook-name/*.html`)
+- cached hooks in a folder (`layouts/partials/hooks/hook-name/*-cached.html`)
+- hook in a file (`layouts/partials/hooks/hook-name.html`)
+- cached hook in a file (`layouts/partials/hooks/hook-name-cached.html`)
+
+### Directory based
+
+### File based
 
 ## Best Practices
 
