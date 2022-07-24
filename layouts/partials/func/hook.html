@@ -7,8 +7,10 @@
   {{- /* simple use case */ -}}
   {{- $context = merge $context (dict "hook" . "context" dict) -}}
 {{- end -}}
+
+{{- /* a quick note */ -}}
 {{- partial "debug.html" (dict
-    "message" (printf "dnb-hugo-hooks - see %s for details" (printf "%s" $context.hook) site.Params.dnb.hooks.hooklink)
+    "message" (printf "dnb-hugo-hooks - see %s for details - %s" (printf "%s" $context.hook) site.Params.dnb.hooks.hooklink)
     "context" .
     "severity" "info"
     "level" 9
@@ -65,7 +67,7 @@
       "severity" "info"
       "level" 9
     ) -}}
-    {{- range os.ReadDir $partialHookFolder -}}   
+    {{- range os.ReadDir $partialHookFolder -}}
       {{- if not .IsDir }}
         {{- $partialHook := printf "%s%s" $partialHookFolder .Name -}}
         {{- partial $partialHook $context $context.hook -}}
