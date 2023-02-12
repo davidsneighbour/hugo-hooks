@@ -8,7 +8,7 @@
   "bugs": "https://github.com/davidsneighbour/hugo-hooks/issues",
   "devDependencies": {
     "@davidsneighbour/standard-version-config": "^4.0.8",
-    "@davidsneighbour/tools": "^4.0.9"
+    "@davidsneighbour/tools": "^4.0.10"
   },
   "scripts": {
     "clean": "run-p clean:*",
