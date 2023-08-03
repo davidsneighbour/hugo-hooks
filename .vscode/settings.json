@@ -1,5 +1,0 @@
-{
-  "files.associations": {
-    "**/layouts/**.html": "go"
-  }
-}
